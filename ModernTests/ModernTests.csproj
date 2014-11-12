@@ -196,6 +196,10 @@
     <Content Include="Content\material\js\material.min.js" />
     <Content Include="Content\material\js\ripples.js" />
     <Content Include="Content\material\js\ripples.min.js" />
+    <Content Include="Content\PageTransition\animations.css" />
+    <Content Include="Content\PageTransition\component.css" />
+    <Content Include="Content\PageTransition\default.css" />
+    <Content Include="Content\PageTransition\multilevelmenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -217,6 +221,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\PageTransition\Demo.js" />
+    <Content Include="Scripts\PageTransition\jquery.dlmenu.js" />
+    <Content Include="Scripts\PageTransition\modernizr.custom.js" />
+    <Content Include="Scripts\PageTransition\pagetransitions.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -258,6 +266,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutTransition.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

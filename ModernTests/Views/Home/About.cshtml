@@ -1,7 +1,38 @@
 ﻿@{
+    Layout = "~/Views/Shared/_LayoutTransition.cshtml";
+}
+@{
     ViewBag.Title = "About";
 }
+@Styles.Render("~/PageTransition/css")
+<script src="~/Scripts/PageTransition/modernizr.custom.js"></script>
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+@*<div class="codrops-top clearfix">
+    <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/AutomaticFigureNumbering/"><span>Previous Demo</span></a>
+    <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15001"><span>Back to the Codrops Article</span></a></span>
+</div>*@
+
+<div class="pt-triggers">
+    <button id="iterateEffects" class="pt-touch-button">Show next page transition</button>
+</div><!-- /triggers -->
+
+<div id="pt-main" class="pt-perspective">
+    <div class="pt-page pt-page-1"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+    <div class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+    <div class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+    <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+    <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+    <div class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+</div>
+
+<div class="pt-message">
+    <p>Your browser does not support CSS animations.</p>
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/PageTransition/jquery.dlmenu.js"></script>
+<script src="~/Scripts/PageTransition/pagetransitions.js"></script>
+@*@section Scripts {
+    @Scripts.Render("~/PageTransition/js")
+}*@

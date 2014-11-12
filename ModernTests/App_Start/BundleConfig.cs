@@ -33,10 +33,19 @@ namespace ModernTests
                       "~/Content/material/css/material-wfont.min.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new StyleBundle("~/PageTransition/css").Include(
+                      "~/Content/PageTransition/default.css",
+                      "~/Content/PageTransition/multilevelmenu.css",
+                      "~/Content/PageTransition/component.css",
+                      "~/Content/PageTransition/animations.css"));
+
             bundles.Add(new ScriptBundle("~/bundles/material").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Content/material/js/ripples.js",
                       "~/Content/material/js/material.js"));
+
+            bundles.Add(new ScriptBundle("~/PageTransition/js").Include(
+                      "~/Scripts/PageTransition/pagetransitions.js"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
