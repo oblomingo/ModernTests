@@ -12,18 +12,16 @@ namespace ModernTests.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Test
+    public partial class Role
     {
-        public Test()
+        public Role()
         {
-            this.Questions = new HashSet<Question>();
+            this.Users = new HashSet<User>();
         }
     
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public int OneTestQuestionsNumber { get; set; }
-        public bool IsAvaible { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual ICollection<Question> Questions { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

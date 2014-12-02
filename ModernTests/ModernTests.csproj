@@ -276,10 +276,17 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ModernTests.Helpers\ModernTests.Helpers.csproj">
+      <Project>{8c39d3f8-ca84-4ca6-880c-177f54b39749}</Project>
+      <Name>ModernTests.Helpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModernTests.Models\ModernTests.Models.csproj">
       <Project>{4411d172-0c76-4447-b80b-0604fc11794b}</Project>
       <Name>ModernTests.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
